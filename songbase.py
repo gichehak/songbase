@@ -15,4 +15,4 @@ def show_all_users():
     return '<h2>This is the page for all users</h2>'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host ='0.0.0.0', port= 2000)
