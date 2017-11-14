@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% extends "home-base.html"%}
+{% block title %}All Songs{% endblock %}
+{% block head%}
+  {{ super() }}
+{% endblock%}
+{% block page_content%}
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="mt-5"> <i class="fa fa-music" aria-hidden="true"></i> Browse All Songs:</h1>
+    <ul>
+        {% for song in songs %}
+          <li>{{song}}</li>
+        {% endfor%}
+    </ul>
+
+  </div>
+
+{% endblock%}
